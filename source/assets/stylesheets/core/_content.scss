@@ -3,7 +3,6 @@
 // ============================================================================== */
 
 body {
-	@extend %centrale;
 }
 
 hgroup {
@@ -30,48 +29,40 @@ hgroup {
 }
 
 h1, %h1 {
-	@extend %aleo;
 	@include rem(font-size, 32px);
 }
 
 h2, %h2 {
-	@extend %aleo;
 	@include rem(font-size, 27px);
 }
 
 h3, %h3 {
-	@extend %aleo;
 	@include rem(font-size, 18px);
 }
 
 h4, %h4 {
-	@extend %centrale;
 	@include rem(font-size, 18px);
 }
 
 h5, %h5 {
-	@extend %centrale;
 	@include rem(font-size, 14px);
 }
 
 h6, %h6 {
-	@extend %centrale--bold;
 	@include rem(font-size, 12px);
 	text-transform: uppercase;
 }
 
 /* bigger first paragraph */
 .intro {
-	@extend %centrale;
 	@include rem(font-size, 21px);
 }
 
 p, table, li {
-	@extend %centrale;
 	@include rem(font-size, 16px);
 
 	strong {
-		@extend %centrale--bold;
+
 	}
 }
 
@@ -94,7 +85,7 @@ a {
 }
 
 form, input, textarea, select, label {
-	@extend %centrale;
+
 }
 
 small {
