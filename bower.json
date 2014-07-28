@@ -9,7 +9,8 @@
     "singularity": "~1.2.1",
     "sass-toolkit": "~2.3.0",
     "bourbon": "~4.0.1",
-    "ragadjust": "*"
+    "ragadjust": "*",
+    "jquery.transit": "~0.9.12"
   },
   "devDependencies": {}
 }
