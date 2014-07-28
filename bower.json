@@ -9,7 +9,6 @@
     "singularity": "~1.2.1",
     "sass-toolkit": "~2.3.0",
     "bourbon": "~4.0.1",
-    "jquery-modal": "~0.5.2",
     "ragadjust": "*"
   },
   "devDependencies": {}
