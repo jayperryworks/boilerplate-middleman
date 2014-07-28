@@ -9,6 +9,7 @@ These are some basic config and start files which I add on top of the default [M
 - [Singularity grid framework](https://github.com/Team-Sass/Singularity)
 - [SASS toolkit](https://github.com/Team-Sass/toolkit)
 - [Enquire.js](http://wicky.nillia.ms/enquire.js/)
+- [jQuery.Transit](http://ricostacruz.com/jquery.transit/)
 - [Bourbon](http://bourbon.io)
 - Nathan Ford's awesome [Rag Adjust](https://github.com/nathanford/ragadjust)
 - Normalize.css and Modernizr via Bower
