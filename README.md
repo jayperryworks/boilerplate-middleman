@@ -6,6 +6,7 @@ These are some basic config and start files which I add on top of the default [M
 #### This boilerplate includes:
 
 - SASS 3.3 (and Compass alpha to support it). Note you may need to run "bundle update" after "bundle install" to get it all working together.
+- [HTML5 Boilerplate](http://html5boilerplate.com), ported to SASS
 - [Singularity grid framework](https://github.com/Team-Sass/Singularity)
 - [SASS toolkit](https://github.com/Team-Sass/toolkit)
 - [Enquire.js](http://wicky.nillia.ms/enquire.js/)
