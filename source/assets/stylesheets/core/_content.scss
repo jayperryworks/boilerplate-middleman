@@ -1,0 +1,115 @@
+/* ==============================================================================
+// 	Global type
+// ============================================================================== */
+
+body {
+	@extend %centrale;
+}
+
+hgroup {
+	@include rem(margin, 16px 0);
+	overflow: hidden;
+
+	#{headers()} {
+		margin: 0;
+		line-height: 1.3;
+	}
+}
+
+#{headers()} {
+	margin: 1em 0;
+
+	a {
+		color: inherit;
+
+		&:hover, &:active {
+			color: inherit;
+			border-bottom: none;
+		}
+	}
+}
+
+h1, %h1 {
+	@extend %aleo;
+	@include rem(font-size, 32px);
+}
+
+h2, %h2 {
+	@extend %aleo;
+	@include rem(font-size, 27px);
+}
+
+h3, %h3 {
+	@extend %aleo;
+	@include rem(font-size, 18px);
+}
+
+h4, %h4 {
+	@extend %centrale;
+	@include rem(font-size, 18px);
+}
+
+h5, %h5 {
+	@extend %centrale;
+	@include rem(font-size, 14px);
+}
+
+h6, %h6 {
+	@extend %centrale--bold;
+	@include rem(font-size, 12px);
+	text-transform: uppercase;
+}
+
+/* bigger first paragraph */
+.intro {
+	@extend %centrale;
+	@include rem(font-size, 21px);
+}
+
+p, table, li {
+	@extend %centrale;
+	@include rem(font-size, 16px);
+
+	strong {
+		@extend %centrale--bold;
+	}
+}
+
+li {
+	margin-bottom: 0.5em;
+}
+
+ol, ul {
+	margin-left: 1.5em; /* bump to the right a little @ mobile sizes so the numbers/bullets don't run off */
+	padding-left: 0;
+
+	@include breakpoint($screen--small) {
+		margin-left: 0;
+	}
+}
+
+a {
+	@include animation(all $base-duration);
+	text-decoration: none;
+}
+
+form, input, textarea, select, label {
+	@extend %centrale;
+}
+
+small {
+
+}
+
+figcaption {
+	
+}
+
+/* use the best ampersands from common system fonts... */
+.amp {
+	@extend %amp-system;
+	font-size: $type-size-amp; /* relative to whatever type surrounds it -- it renders slightly bigger */
+	color: inherit !important;
+}
+
+
