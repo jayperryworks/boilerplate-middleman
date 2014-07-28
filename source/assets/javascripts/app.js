@@ -3,14 +3,16 @@
 //= require ragadjust/js/ragadjust.js
 //= require_tree .
 
+// Use an object literal pattern to help organize code
+// http://rmurphey.com/blog/2009/10/15/using-objects-to-organize-your-code/
 (function($) {
   'use strict';
   
   // ================================================================
-  // cdc behaviors
+  // APP_NAME behaviors
   // ================================================================
 
-  var cdc = { // namespace setup
+  var APP_NAME = { // namespace setup
 
     // Settings
     // -> global vars go here
@@ -22,13 +24,13 @@
     // Setup
     // ---------------------------------------------------------------
     init : function(config) {
-      $.extend(cdc.config, config);
+      $.extend(APP_NAME.config, config);
 
-      // fall back to .animate() frame animation if CSS transitions are not supported
-      // -> for transit.js
-      if (!$.support.transition) {
-        $.fn.transition = $.fn.animate;
-      }
+      // fall back to jquery.animate() if CSS transitions are not supported
+      // -> for transit.js: https://github.com/rstacruz/jquery.transit
+      // if (!$.support.transition) {
+      //   $.fn.transition = $.fn.animate;
+      // }
 
       //----- Widon't & Best Ampersand -------------------------------------
       // -> http://justinhileman.info/article/a-jquery-widont-snippet/
@@ -57,6 +59,6 @@
 
   
   $(window).load(function() {
-    cdc.init();
+    APP_NAME.init();
   });
 })(jQuery);
