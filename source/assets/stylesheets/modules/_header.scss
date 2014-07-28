@@ -5,56 +5,13 @@
 /* BASE
 // ----------------------------------------------------------------------------- */
 
-.header {
+.header, [role="banner"] {
 	
 }
 
 /* MODIFIERS
 // ----------------------------------------------------------------------------- */
 
-.header.global {
-  @extend %fixed-full_height;
-  @include rem(width, $header-w);
-  // @include border(right);
-  left: 0;
-  z-index: $z--high;
+.header.global, [role="banner"].global {
 
-  .header-login {
-    @include rem(width, $header-w);
-    @include rem(padding, 12px $grid-gutter);
-    @include border(top, thick);
-    position: fixed;
-    display: block;
-    bottom: 0;
-    left: 0;
-    color: desaturate(darken(map-get($theme--reverse, text--secondary), 30), 15);
-    background-color: map-get($theme--reverse, bg);
-  }
 }
-
-  .logo-mns.small {
-    @extend %aleo--bold;
-    @include rem(margin, 12px $grid-gutter 0 $grid-gutter);
-    // @include rem(padding, 12px $grid-gutter);
-    display: block;
-    text-align: center;
-  }
-
-  // global search box
-  .search.global {
-    @include rem(margin, 12px ($grid-gutter/2));
-    display: block;
-    padding: 0.6em 0 0.6em 2em;
-    border-radius: 200em;
-    color: theme(reverse, text--primary);
-
-    &:focus {
-      border-color: map-get($theme--reverse, highlight);
-      background: lighten(map-get($theme--reverse, well), 2);
-    }
-
-    * {
-      width: 100%;
-    }
-  }
-
