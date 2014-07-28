@@ -1,7 +1,7 @@
 # Middleman Boilerplate
 ###### As used by Jay Perry Works
 
-These are some basic config and start files which I add on top of the default Middleman build. 
+These are some basic config and start files which I add on top of the default [Middleman](http://middlemanapp.com) build. 
 
 #### This boilerplate includes:
 
