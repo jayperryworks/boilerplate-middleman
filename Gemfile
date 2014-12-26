@@ -2,7 +2,7 @@
 # the following line to use "https"
 source 'http://rubygems.org'
 
-gem "middleman", "~>3.3.3"
+gem "middleman", ">=3.3.7"
 
 # Live-reloading plugin
 gem "middleman-livereload", "~> 3.1.0"
@@ -19,10 +19,10 @@ gem 'string-urlize'
 # update to latest compass to support SASS
 # -> would like to ditch compass entirely b/c sass frameworks are installed via bower
 # -> but middleman likes it: https://github.com/middleman/middleman/issues/874
-gem 'compass', '~> 1.0.0.alpha.19'
+gem 'compass', '~>1.0'
 
 # Latest version of SASS
-gem "sass", ">=3.3"
+gem "sass", ">=3.4"
 
 # For faster file watcher updates on Windows:
 gem "wdm", "~> 0.1.0", :platforms => [:mswin, :mingw]
